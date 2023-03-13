@@ -5,36 +5,399 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/STT_20036451_TranDinhPhong/Tuan 3/css/Bai21.css">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .clear
+        {
+            clear: both;
+        }
+
+        .Layout1 header
+        {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            background-color: bisque;
+        }
+
+        .Layout1 .section
+        {
+            width: 100%;
+            height: 300px;
+            background-color: beige;
+        }
+
+        footer
+        {
+            text-align: center;
+            background-color: azure;
+            width: 100%;
+            height: 50px;
+        }
+
+        .Layout2 header
+        {
+            text-align: center;
+            background-color: antiquewhite;
+            width: 100%;
+            height: 50px;
+        }
+
+        .Layout2 .content
+        {
+            float: left;
+            width: 100%;
+            background-color: bisque;
+            height: 300px;
+            display: flex;
+        }
+
+        .Layout2 .nav
+        {
+            background-color: azure;
+            width: 20%;
+        }
+
+        .Layout2 .section1
+        {
+            width: 60%;
+            background-color: aqua;
+        }
+
+        .Layout2 .section2
+        {
+            width: 20%;
+        }
+
+        .Layout2 footer
+        {
+            height: 50px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        .Layout3 header
+        {
+            height: 100px;
+            background-color: bisque;
+            position: relative;
+            width: 100%;
+        }
+
+        .Layout3 .menu
+        {
+            position: absolute;
+            height: 40px;
+            background-color: blueviolet;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+
+        .Layout3 .content
+        {
+            height: 300px;
+            background-color: beige;
+            width: 100%;
+            display: inline-flex;
+        }
+
+        .Layout3 .nav
+        {
+            width: 20%;
+            background-color: aqua;
+        }
+
+        .Layout3 .content1
+        {
+            width: 60%;
+        }
+
+        .Layout3 .content2
+        {
+            background-color: azure;
+            width: 20%;
+        }
+
+        .Layout3 footer
+        {
+            height: 50px;
+            text-align: center;
+            background-color: bisque;
+        }
+
+        .Layout4 header
+        {
+            height: 50px;
+            background-color: antiquewhite;
+        }
+
+        .Layout4 .content
+        {
+            width: 100%;
+            height: 300px;
+            background-color: azure;
+            display: flex;
+            float: left;
+        }
+
+        .Layout4 .nav
+        {
+            width: 30%;
+            background-color: aquamarine;
+        }
+
+        .Layout4 .section
+        {
+            width: 70%;
+            background-color: bisque;
+        }
+
+        .Layout4 .article
+        {
+            width: 95%;
+            height: 180px;
+            background-color: aqua;
+            margin: 10px;
+        }
+
+        .Layout5 header
+        {
+            position: relative;
+            height: 100px;
+            background-color: bisque;
+        }
+
+        .Layout5 .nav
+        {
+            width: 100%;
+            background-color: aquamarine;
+            position: absolute;
+            bottom: 0;
+            height: 40px;
+        }
+
+        .Layout5 .section
+        {
+            background-color: aqua;
+            height: 300px;
+            padding: 10px;
+        }
+
+        .Layout5 .article
+        {
+            width: 95%;
+            background-color: antiquewhite;
+            height: 250px;
+            padding: 10px;
+            /* margin-right: 10px; */
+        }
+
+        .Layout6 header
+        {
+            width: 100%;
+            height: 100px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        .Layout6 .nav
+        {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: aqua;
+            height: 30px;
+        }
+
+        .Layout6 .content
+        {
+            float: left;
+            display: flex;
+            height: 300px;
+            width: 100%;
+        }
+
+        .Layout6 .section
+        {
+            width: 70%;
+            background-color: bisque;
+        }
+
+        .Layout6 .article
+        {
+            width: 95%;
+            background-color: aquamarine;
+            height: 270px;
+            margin-left: 10px;
+        }
+
+        .Layout6 .article1
+        {
+            height: 65%;
+            background-color: coral;
+        }
+    </style>
 </head>
 <body>
-    <div class="main">
-        <div id="header">
-            <div id="logo">
-                <img src="/STT_20036451_TranDinhPhong/Tuan 3/img/W3Schools_logo.png" alt="logo">
+    <h1 id="titleBai">Layout 1</h1>
+    <br>
+    <div class="Layout1">
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <div class="section">
+            section
+        </div>
+
+        <footer>
+            footer
+        </footer>
+    </div>
+    <br>
+    <h1>Layout 2</h1>
+    <br>
+    <div class="Layout2">
+        <header>
+            header
+        </header>
+
+        <div class="content">
+            <div class="nav">
+                nav
             </div>
 
-            <div id="menu">
-                <div id="nav">
-                    <ul id="menu">
-                        <li><a href=""><img src="/STT_20036451_TranDinhPhong/Tuan 3/img/icon_TrangChu.png" alt=""></a></li>
-                        <li><a href="">HTML</a></li>
-                        <li><a href="">CSS</a></li>
-                        <li><a href="">JAVASCRIPT</a></li>
-                        <li><a href="">TURTORIALS</a></li>
-                        <li><a href="">REFERENCES</a></li>
-                        <li><a href="">EXAMPLES</a></li>
-                        <li><a href=""><img src="/STT_20036451_TranDinhPhong/Tuan 3/img/icon_traidat.png" alt=""></a></li>
-                        <li><a href=""><img src="/STT_20036451_TranDinhPhong/Tuan 3/img/icon_search.png" alt=""></a></li>
-                    </ul>
-                    
+            <div class="section1">
+
+            </div>
+
+            <div class="section2">
+                section
+            </div>
+        </div>
+        <div class="clear"></div>
+        <footer>
+            footer
+        </footer>
+    </div>
+
+    <br>
+    <h1>Layout 3</h1>
+    <br>
+    <div class="Layout3">
+        <header>
+            <div class="menu">
+                menu
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="nav">
+                nav
+            </div>
+
+            <div class="content1">
+
+            </div>
+                
+            <div class="content2">
+                section
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <footer>
+            footer
+        </footer>
+    </div>
+    <br>
+    <h1>Layout 4</h1>
+    <br>
+    <div class="Layout4">
+        <header>
+            header
+        </header>
+
+        <div class="content">
+            <div class="nav">
+                nav
+            </div>
+
+            <div class="section">
+                section
+                <div class="article">
+                    article
                 </div>
             </div>
         </div>
+        <div class="clear"></div>
+        <footer>
+            footer
+        </footer>
+    </div>
+    
+    <br>
+    <h1>Layout 5</h1>
+    <br>
+    <div class="Layout5">
+        <header>
+            header
+            <div class="nav">
+                nav
+            </div>
+        </header>
 
-        <div id="content">
-
+        <div class="section">
+            Section
+            <div class="article">
+                article
+            </div>
         </div>
+
+        <footer>
+            footer
+        </footer>
+    </div>
+    <br>
+    <h1>Layout 6</h1>
+    <br>
+    <div class="Layout6">
+        <header>
+            header
+            <div class="nav">
+                nav
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                Section
+                <div class="article">
+                    <div class="article1">
+                        article
+                    </div>
+
+                    <div class="article2">
+                        article
+                    </div>
+                </div>
+            </div>
+
+            <div class="aside">
+                aside
+            </div>
+        </div>
+        <div class="clear"></div>
+        <footer>
+            footer
+        </footer>
     </div>
 </body>
 </html>

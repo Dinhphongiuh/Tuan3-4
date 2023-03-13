@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .swapper 
+        {
+            position: relative;
+            height: 500px;
+            background-color: #f4f4f4;
+            }
+
+        header
+        {
+            height: 200px;
+        }
+        
+        header h1
+        {
+            margin-top: 50px;
+            font-size: 60px;
+        }
+
+        .ribbon {
+            position: absolute;
+            top: 10;
+            left: -110px;
+            width: 400px;
+            height: 50px;
+            background: rgb(104, 24, 24);
+            transform: rotate(-45deg);
+            border: 1px solid #fff;
+            }
+
+        .ribbon span {
+            /* position: absolute; */
+            /* top: 50%; */
+            /* left: 50%; */
+            line-height: 50px;
+            padding: 110px;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="ribbon">
+                <span>Best seller 2015</span>
+            </div>
+            <h1>Cascading Style Sheets <br> Book</h1>
+        </header>
+
+        <div class="content">
+            <p>
+                Casading style Sheets (CSS) is a style sheet language
+                used for describing the look and formating of a Document 
+                written in a markup language. Although most often used to 
+                change the style of web pages and user interfaces written in
+                HTML and XHTML, the language can be applied to any kind of XML
+                document, including plain XLM, SVG and XUL. Along with HTML
+                and Javascript, CSS is a cornerstone technology used by most
+                Websites to create visually engaging webapes, user interfaces
+                for web applications, and user interfaces for many mobile applocations.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
